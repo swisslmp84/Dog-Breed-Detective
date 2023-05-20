@@ -45,7 +45,7 @@ The project team is confident that with this MVP, it will be able to provide the
 
 `System Modelling`
 
-[![Dog Breed Detective System Model](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Dog Breed Detective - System Modelling")
+[![Dog Breed Detective System Model](https://youtu.be/T3FV5kbiTLQ/0.jpg)](https://youtu.be/T3FV5kbiTLQ "Dog Breed Detective - System Modelling")
 
 `Use Case Demo`
 
