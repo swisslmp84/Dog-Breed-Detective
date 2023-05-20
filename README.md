@@ -36,7 +36,7 @@ The project team is confident that with this MVP, it will be able to provide the
 | :------------ |:---------------:| :-----| :-----|
 | Tan Chee Wei | A0230818H | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567A@nus.edu.sg |
 | Aloysius Ong Jun Long | S****702J | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
-| Goh Zhi Hui | A0269364R | 1. Image pre-processing<br/>2. Object Detection in Image<br/>3. CNN modelling<br/>4. API integration<br/>5. Frontend development E1112235@u.nus.edu |
+| Goh Zhi Hui | A0269364R | 1. Image pre-processing<br/>2. Object Detection in Image<br/>3. CNN modelling<br/>4. API integration<br/>5. Frontend development| E1112235@u.nus.edu |
 | Chen Yihan Johaness | A0214926A | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567D@yahoo.com |
 
 ---
