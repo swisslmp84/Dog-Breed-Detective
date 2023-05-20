@@ -1,7 +1,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Singapore Housing & Deveoplment Board - BTO Recommender System
 
-<img src="SystemCode/clips/static/hdb-bto.png"
+<img src="SystemCode/dogDetectiveProject/static/images/preview pic.jpg"
      style="float: left; margin-right: 0px;" />
 
 ---
