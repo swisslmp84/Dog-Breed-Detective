@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Detective & Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+    <script type="text/javascript" src="{{ url_for('static',filename='scripts/script.js')}}"></script>
+</head>
+
+<style>
+	
+</style>
+<body id="mainBody">
+	<form id="mainForm" method="post" action="/" enctype="multipart/form-data">
+		<div class="container">
+			<h1>Dog Detective & Recommender</h1>
+				<label for="file">Image File</label>
+	            <input type="file" name="file" autocomplete="off" id="fileInput" accept="image/*" required>
+	            <button type="button" id="uploadButton" onclick="hideErrorMessage()">Upload</button><br/><br/>
+	            <div id="errorDiv" class="alert alert-danger alert-dismissable fade in" hidden></div>
+				<div id="successDiv" class="alert alert-info alert-dismissable fade in" hidden></div>
+
+			<div id="displayDiv" hidden>
+				<div id="imageMessage" class="alert alert-warning alert-dismissable fade in"></div>
+				<img id="displayImage" alt="Upload Image" usemap="#dogs">
+				<map name = "dogs" id="imageMap"></map>
+				<div id="dogDetailDiv" hidden>
+					<h2 id="selectedheader"></h2>
+					<div id="infoDiv" hidden>
+						<textarea id="dogBreedDescription" rows="4" cols="150" disabled></textarea>
+						<div class="options"><label><b>Breed Group : </b></label><div id="dogBreedGroup"></div></div>
+						<div class="options"><label><b>Dog Size : </b></label><div id="dogSize"></div></div>
+						<div class="options"><label><b>Average Height : </b></label><div id="dogHeight"></div></div>
+						<div class="options"><label><b>Average Weight : </b></label><div id="dogWeight"></div></div>
+						<div class="options"><label><b>Average Lifespan : </b></label><div id="dogLifespan"></div></div>
+						<div class="options"><label><b>Apartment Friendly : </b></label><div id="dogApartment"></div></div>
+						<div class="options"><label><b>Family Friendly : </b></label><div id="dogFamily"></div></div>
+						<div class="options"><label><b>Kid Friendly : </b></label><div id="dogKid"></div></div>
+						<div class="options"><label><b>Dog Friendly : </b></label><div id="dogDog"></div></div>
+						<div class="options"><label><b>Good For First Time Owner : </b></label><div id="dogFirstTime"></div></div>
+						<div class="options"><label><b>Easy To Groom : </b></label><div id="dogEasyToGroom"></div></div>
+						<div class="options"><label><b>Intelligence : </b></label><div id="dogIntelligence"></div></div>
+						<div class="options"><label><b>Playfulness : </b></label><div id="dogPlayfulness"></div></div>
+						<div class="options"><label><b>Overall Health : </b></label><div id="dogOverallHealth"></div></div>
+					</div>
+					<div id="messageDiv" hidden>
+						Sorry we do not have information on this dog breed and is unable to proceed with the recommendation!<br/>
+					</div>
+				</div>
+				<br/>
+				
+				<details id="userDetail" open hidden>
+					<summary>Help Us Understand You Better</summary>
+				<div id="userDetailDiv" hidden>
+					<!-- <h2 id="userDetail">Help Us Understand You Better</h2> -->
+					<div class="options">
+						<label><b>Your Housing : </b></label>
+						<div>
+							<input type="radio" id="userhousingLanded" name="housingRadio" value="Landed">
+							<label for="userhousingLanded">Landed</label>
+							<input type="radio" id="userhousingApartment" name="housingRadio" value="Apartment">
+							<label for="userhousingApartment">Apartment</label>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>Staying with Family: </b></label>
+						<div>
+				      		<input type="radio" id="userFamilyYes" name="familyRadio" value="Yes">
+							<label for="userFamilyYes">Yes</label>
+							<input type="radio" id="userFamilyNo" name="familyRadio" value="No">
+							<label for="userFamilyNo">No</label>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>Have Kids : </b></label>
+						<div>
+				      		<input type="radio" id="userKidsYes" name="kidsRadio" value="Yes">
+							<label for="userKidsYes">Yes</label>
+							<input type="radio" id="userKidsNo" name="kidsRadio" value="No">
+							<label for="userKidsNo">No</label>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>First Time Dog Owner : </b></label>
+						<div>
+				      		<input type="radio" id="userfirstTimeYes" name="firstTimeRadio" value="Yes">
+							<label for="userfirstTimeYes">Yes</label>
+							<input type="radio" id="userfirstTimeNo" name="firstTimeRadio" value="No">
+							<label for="userfirstTimeNo">No</label>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>Have other dog : </b></label>
+						<div>
+				      		<input type="radio" id="userOtherDogYes" name="otherDogRadio" value="Yes">
+							<label for="userOtherDogYes">Yes</label>
+							<input type="radio" id="userOtherDogNo" name="otherDogRadio" value="No">
+							<label for="userOtherDogNo">No</label>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>Available Time : </b></label>
+						<div>
+				      		<select name="userAvailableTime" id="userAvailableTime">
+				      			<option value="">Select</option>
+								<option value="low">Low</option>
+								<option value="medium">Medium</option>
+								<option value="high">High</option>
+							</select>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>Prefer Dog Size : </b></label>
+						<div>
+				      		<select name="preferDogSize" id="preferDogSize">
+				      			<option value="">Select</option>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+								<option value="giant">Giant</option>
+							</select>
+						</div>
+					</div>
+					<div class="options">
+						<label><b>Prefer Mainenance Cost : </b></label>
+						<div>
+				      		<select name="preferCost" id="preferCost">
+				      			<option value="">Select</option>
+								<option value="low">low</option>
+								<option value="medium">medium</option>
+								<option value="high">High</option>
+							</select>
+						</div>
+					</div>
+					<div class="options">
+						<button type="button" id="recommendButton" onclick="hideErrorMessage();getDogRecommendation();" hidden>Recommend Other Breed</button>
+						<button type="button" id="resetButton" onclick="hideErrorMessage();resetAllUserInputFields();" hidden>Reset</button>
+						<br/>
+					</div>
+				</div>
+				</details>
+
+				<br/>
+				<div id="recommendMessage" class="alert alert-warning alert-dismissable fade in"></div>
+				<div id="recommendationDiv">
+					<details id="recommendDetail1">
+					<summary id="recommendLabel1"></summary>
+					<div id="recommendImgDiv1" class="options">
+						<img id="recommendImg1" width="475" height="267">
+						<label id="recommendLabel1"></label>
+					</div>
+					<div id= "recommendDiv1" >	
+						<textarea id="recommendImg1BreedDescription" rows="4" cols="150" disabled></textarea>
+						<div class="options">						
+							<label><b>Breed Group : </b></label><div id="recommendImg1BreedGroup"></div>
+							<label><b>Dog Size : </b></label><div id="recommendImg1Size"></div>
+							<label><b>Average Height : </b></label><div id="recommendImg1Height"></div>
+							<label><b>Average Weight : </b></label><div id="recommendImg1Weight"></div>
+							<label><b>Average Lifespan : </b></label><div id="recommendImg1Lifespan"></div>
+							<label><b>Apartment Friendly : </b></label><div id="recommendImg1Apartment"></div>
+							<label><b>Family Friendly : </b></label><div id="recommendImg1Family"></div>
+							<label><b>Kid Friendly : </b></label><div id="recommendImg1Kid"></div>
+							<label><b>Dog Friendly : </b></label><div id="recommendImg1Dog"></div>
+							<label><b>Good For First Time Owner : </b></label><div id="recommendImg1FirstTime"></div>
+							<label><b>Easy To Groom : </b></label><div id="recommendImg1EasyToGroom"></div>
+							<label><b>Intelligence : </b></label><div id="recommendImg1Intelligence"></div>
+							<label><b>Playfulness : </b></label><div id="recommendImg1Playfulness"></div>
+							<label><b>Overall Health : </b></label><div id="recommendImg1OverallHealth"></div>
+						</div>
+					</div>
+					</details>
+
+					<details id="recommendDetail2">
+					<summary id="recommendLabel2"></summary>
+					<div id="recommendImgDiv2" class="options">
+						<img id="recommendImg2" width="475" height="267">
+						<label id="recommendLabel2"></label>
+					</div>
+					<div id= "recommendDiv2">
+						<textarea id="recommendImg2BreedDescription" rows="4" cols="150" disabled></textarea>
+						<div class="options">
+							<label><b>Breed Group : </b></label><div id="recommendImg2BreedGroup"></div>
+							<label><b>Dog Size : </b></label><div id="recommendImg2Size"></div>
+							<label><b>Average Height : </b></label><div id="recommendImg2Height"></div>
+							<label><b>Average Weight : </b></label><div id="recommendImg2Weight"></div>
+							<label><b>Average Lifespan : </b></label><div id="recommendImg2Lifespan"></div>
+							<label><b>Apartment Friendly : </b></label><div id="recommendImg2Apartment"></div>
+							<label><b>Family Friendly : </b></label><div id="recommendImg2Family"></div>
+							<label><b>Kid Friendly : </b></label><div id="recommendImg2Kid"></div>
+							<label><b>Dog Friendly : </b></label><div id="recommendImg2Dog"></div>
+							<label><b>Good For First Time Owner : </b></label><div id="recommendImg2FirstTime"></div>
+							<label><b>Easy To Groom : </b></label><div id="recommendImg2EasyToGroom"></div>
+							<label><b>Intelligence : </b></label><div id="recommendImg2Intelligence"></div>
+							<label><b>Playfulness : </b></label><div id="recommendImg2Playfulness"></div>
+							<label><b>Overall Health : </b></label><div id="recommendImg2OverallHealth"></div>
+						</div>
+					</div>
+					</details>
+
+					<details id="recommendDetail3">
+					<summary id="recommendLabel3"></summary>
+					<div id="recommendImgDiv3" class="options">
+						<img id="recommendImg3" width="475" height="267">
+						<label id="recommendLabel3"></label>
+					</div>
+					<div id= "recommendDiv3">
+						<textarea id="recommendImg3BreedDescription" rows="4" cols="150" disabled></textarea>
+						<div class="options">
+							<label><b>Breed Group : </b></label><div id="recommendImg3BreedGroup"></div>
+							<label><b>Dog Size : </b></label><div id="recommendImg3Size"></div>
+							<label><b>Average Height : </b></label><div id="recommendImg3Height"></div>
+							<label><b>Average Weight : </b></label><div id="recommendImg3Weight"></div>
+							<label><b>Average Lifespan : </b></label><div id="recommendImg3Lifespan"></div>
+							<label><b>Apartment Friendly : </b></label><div id="recommendImg3Apartment"></div>
+							<label><b>Family Friendly : </b></label><div id="recommendImg3Family"></div>
+							<label><b>Kid Friendly : </b></label><div id="recommendImg3Kid"></div>
+							<label><b>Dog Friendly : </b></label><div id="recommendImg3Dog"></div>
+							<label><b>Good For First Time Owner : </b></label><div id="recommendImg3FirstTime"></div>
+							<label><b>Easy To Groom : </b></label><div id="recommendImg3EasyToGroom"></div>
+							<label><b>Intelligence : </b></label><div id="recommendImg3Intelligence"></div>
+							<label><b>Playfulness : </b></label><div id="recommendImg3Playfulness"></div>
+							<label><b>Overall Health : </b></label><div id="recommendImg3OverallHealth"></div>
+						</div>
+					</div>
+					</details>
+				</div>		
+			</div>
+	   </div>
+	   <a href="#" class="top">Back to Top &#8593;</a>	
+	</form>
+	<div id="popup">
+		<img id="loadingIcon" src="./static/VAyR.GIF" class="center">
+	</div>
+</body>
+</html>
+	
