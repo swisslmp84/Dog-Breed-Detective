@@ -49,7 +49,7 @@ The project team is confident that with this MVP, it will be able to provide the
 
 `Use Case Demo`
 
-[![Dog Breed Detective Demo](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Dog Breed Detective - Use Case Demo")
+[![Dog Breed Detective Demo](http://img.youtube.com/vi/5qBQxENHLiY/0.jpg)](https://youtu.be/5qBQxENHLiY "Dog Breed Detective - Use Case Demo")
 
 ---
 
