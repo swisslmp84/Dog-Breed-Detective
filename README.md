@@ -1,5 +1,5 @@
 ## SECTION 1 : PROJECT TITLE
-## Singapore Housing & Deveoplment Board - BTO Recommender System
+## Dog Breed Detective
 
 <img src="SystemCode/dogDetectiveProject/static/images/preview pic.jpg"
      style="float: left; margin-right: 0px;" />
