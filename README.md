@@ -43,9 +43,9 @@ The project team is confident that with this MVP, it will be able to provide the
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-`System Modelling`
+`System Modelling`https://youtu.be/T3FV5kbiTLQ
 
-[![Dog Breed Detective System Model](https://youtu.be/T3FV5kbiTLQ/0.jpg)](https://youtu.be/T3FV5kbiTLQ "Dog Breed Detective - System Modelling")
+[![Dog Breed Detective System Model](https://img.youtube.com/vi/T3FV5kbiTLQ/0.jpg)](https://youtu.be/T3FV5kbiTLQ "Dog Breed Detective - System Modelling")
 
 `Use Case Demo`
 
