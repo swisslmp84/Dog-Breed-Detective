@@ -88,4 +88,10 @@ The project team is confident that with this MVP, it will be able to provide the
 * Dog Breed Information
 * Information that are web scrap and data pre-processed, which were subsequently used in our system
 
+##   UAT Test Images
+* This folders contain the images use by the project team members during the UAT
+
+## Unused Algorithim Python files
+*  This folders contain the python files of the KNN and Decision Trees Algorithms which are not used in the project but was evalutated as a suitable candidate for the project.
+
 ---
