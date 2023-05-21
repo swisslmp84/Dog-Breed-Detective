@@ -63,43 +63,45 @@ The project team is confident that with this MVP, it will be able to provide the
 `Refer to project report at Github Folder: ProjectReport`
 
 Contents
-Executive Summary	
-Problem and Business Considerations	
-     Problem statement	
-     Business Cases and applications	
-3.	Design of System	
-3.1	Proposed Solution	
-3.2	Conceptual	
-3.3	Architecture	
-3.4	Frame Diagram	
-4.	Data	
-4.1	Data Collection and Assembly	
-6.2	Data Pre-processing for Image Recognition Sub-System	
-7.3	Data Web Scraping & Processing for Dog Recommender Sub-System	
-8.	Flow Diagram	
-9.	Modelling	
-10.1	Image Recognition	
-11.2	Modelling Algorithms used for Image Recognition Sub-System	
-12.3	Model Evaluation : Choosing CNN algorithm	
-13.4	Modelling Algorithm for Recommender System	
-14.5	Model Evaluation: Choosing Euclidean Distance	
-15.	Testing and Evaluation	
-16.1	System Integration Testing	
-17.2	User Acceptance Testing	
-18.3	Evaluation	
-19.	Promising Prospect, Current Shortcomings and Business Model	
-20.1	Current Shortcomings	
-21.2	Promising Prospect	
-22.3	Business Model	
-23.	Conclusion	
-24.	Appendix	
-25.1	References	
-26.2	Project Proposal	
-27.3	Project Objectives	
-28.4	Installation Guide	
-29.5	User Guide	
-30.6	UAT Test Results	
-31.7	Team Member Reports	
+1.	Executive Summary<br/>
+2.	Problem and Business Considerations<br/>
+2.1	Problem statement<br/>
+2.2	Business Cases and applications<br/>
+3.	Design of System<br/>
+3.1	Proposed Solution<br/>
+3.2	Conceptual<br/>
+3.3	Architecture<br/>
+3.4	Frame Diagram<br/>
+4.	Data	2
+4.1	Data Collection and Assembly	2
+4.2	Data Pre-processing for Image Recognition Sub-System	3
+4.3	Data Web Scraping & Processing for Dog Recommender Sub-System	6
+5.	Flow Diagram	8
+6.	Modelling	8
+6.1	Image Recognition	8
+6.2	Modelling Algorithms used for Image Recognition Sub-System	12
+6.3	Model Evaluation : Choosing CNN algorithm	23
+6.4	Modelling Algorithm for Recommender System	23
+6.5	Model Evaluation: Choosing Euclidean Distance	26
+7.	Testing and Evaluation	26
+7.1	System Integration Testing	26
+7.2	User Acceptance Testing	27
+7.3	Evaluation	27
+8.	Promising Prospect, Current Shortcomings and Business Model	27
+8.1	Current Shortcomings	27
+8.2	Promising Prospect	28
+8.3	Business Model	29
+9.	Conclusion	29
+10.	Appendix	30
+10.1	References	30
+10.2	Project Proposal	31
+10.3	Project Objectives	6
+10.4	Installation Guide	7
+10.5	User Guide	11
+10.6	UAT Test Results	19
+10.7	Team Member Reports	23
+
+
 
 
 
