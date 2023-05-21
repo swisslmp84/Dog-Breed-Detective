@@ -72,34 +72,34 @@ Contents
 3.2	Conceptual<br/>
 3.3	Architecture<br/>
 3.4	Frame Diagram<br/>
-4.	Data	2
-4.1	Data Collection and Assembly	2
-4.2	Data Pre-processing for Image Recognition Sub-System	3
-4.3	Data Web Scraping & Processing for Dog Recommender Sub-System	6
-5.	Flow Diagram	8
-6.	Modelling	8
-6.1	Image Recognition	8
-6.2	Modelling Algorithms used for Image Recognition Sub-System	12
-6.3	Model Evaluation : Choosing CNN algorithm	23
-6.4	Modelling Algorithm for Recommender System	23
-6.5	Model Evaluation: Choosing Euclidean Distance	26
-7.	Testing and Evaluation	26
-7.1	System Integration Testing	26
-7.2	User Acceptance Testing	27
-7.3	Evaluation	27
-8.	Promising Prospect, Current Shortcomings and Business Model	27
-8.1	Current Shortcomings	27
-8.2	Promising Prospect	28
-8.3	Business Model	29
-9.	Conclusion	29
-10.	Appendix	30
-10.1	References	30
-10.2	Project Proposal	31
-10.3	Project Objectives	6
-10.4	Installation Guide	7
-10.5	User Guide	11
-10.6	UAT Test Results	19
-10.7	Team Member Reports	23
+4.	Data<br/>
+4.1	Data Collection and Assembly<br/>
+4.2	Data Pre-processing for Image Recognition Sub-System<br/>
+4.3	Data Web Scraping & Processing for Dog Recommender Sub-System<br/>
+5.	Flow Diagram<br/>
+6.	Modelling<br/>
+6.1	Image Recognition<br/>
+6.2	Modelling Algorithms used for Image Recognition Sub-System<br/>
+6.3	Model Evaluation : Choosing CNN algorithm<br/>
+6.4	Modelling Algorithm for Recommender System<br/>
+6.5	Model Evaluation: Choosing Euclidean Distance<br/>
+7.	Testing and Evaluation<br/>
+7.1	System Integration Testing<br/>
+7.2	User Acceptance Testing<br/>
+7.3	Evaluation<br/>
+8.	Promising Prospect, Current Shortcomings and Business Model<br/>
+8.1	Current Shortcomings<br/>
+8.2	Promising Prospect<br/>
+8.3	Business Model<br/>
+9.	Conclusion<br/>
+10.	Appendix<br/>
+10.1	References<br/>
+10.2	Project Proposal<br/>
+10.3	Project Objectives<br/>
+10.4	Installation Guide<br/>
+10.5	User Guide<br/>
+10.6	UAT Test Results<br/>
+10.7	Team Member Reports<br/>
 
 
 
