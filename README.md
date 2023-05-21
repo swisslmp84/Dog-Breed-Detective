@@ -34,10 +34,10 @@ The project team is confident that with this MVP, it will be able to provide the
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Item Contribution | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Tan Chee Wei | A0230818H | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567A@nus.edu.sg |
-| Aloysius Ong Jun Long | S****702J | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
+| Tan Chee Wei | A0230818H |  1. Project Management<br/>2. Data acquisition<br/>3. KNN and Decision Modelling<br/>4. System Integration Testing<br/>5. User Acceptance Testing | E0700584A@u.nus.edu | 
+| Aloysius Ong Jun Long | S****702J | 1. Data Acquistion by Web Scraping <br/>2. Data Cleansing & Processing<br/>3. Recommender System Modelling <br/>4. User Acceptance Testing | Aloy31st@hotmail.com |
 | Goh Zhi Hui | A0269364R | 1. Image pre-processing<br/>2. Object Detection in Image<br/>3. CNN modelling<br/>4. API integration<br/>5. Frontend development| E1112235@u.nus.edu |
-| Chen Yihan Johaness | A0214926A | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567D@yahoo.com |
+| Chen Yihan Johaness | A0214926A | 1. Project Consultancy<br/>2. Business and Marketing Research <br/>3. Technical and Marketing Video Creation <br/>5. Frontend development| E0533420@u.nus.edu |
 
 ---
 
@@ -62,22 +62,46 @@ The project team is confident that with this MVP, it will be able to provide the
 
 `Refer to project report at Github Folder: ProjectReport`
 
-**Recommended Sections for Project Report / Paper:**
-- Executive Summary / Paper Abstract
-- Sponsor Company Introduction (if applicable)
-- Business Problem Background
-- Market Research
-- Project Objectives & Success Measurements
-- Project Solution (To detail domain modelling & system design.)
-- Project Implementation (To detail system development & testing approach.)
-- Project Performance & Validation (To prove project objectives are met.)
-- Project Conclusions: Findings & Recommendation
-- Appendix of report: Project Proposal
-- Appendix of report: Mapped System Functionalities against knowledge, techniques and skills of modular courses: MR, RS, CGS
-- Appendix of report: Installation and User Guide
-- Appendix of report: 1-2 pages individual project report per project member, including: Individual reflection of project journey: (1) personal contribution to group project (2) what learnt is most useful for you (3) how you can apply the knowledge and skills in other situations or your workplaces
-- Appendix of report: List of Abbreviations (if applicable)
-- Appendix of report: References (if applicable)
+Contents
+1.	Executive Summary	
+2.	Problem and Business Considerations	
+2.1	Problem statement	
+2.2	Business Cases and applications	
+3.	Design of System	
+3.1	Proposed Solution	
+3.2	Conceptual	
+3.3	Architecture	
+3.4	Frame Diagram	
+4.	Data	
+4.1	Data Collection and Assembly	
+4.2	Data Pre-processing for Image Recognition Sub-System	
+4.3	Data Web Scraping & Processing for Dog Recommender Sub-System	
+5.	Flow Diagram	
+6.	Modelling	
+6.1	Image Recognition	
+6.2	Modelling Algorithms used for Image Recognition Sub-System	
+6.3	Model Evaluation : Choosing CNN algorithm	
+6.4	Modelling Algorithm for Recommender System	
+6.5	Model Evaluation: Choosing Euclidean Distance	
+7.	Testing and Evaluation	
+7.1	System Integration Testing	
+7.2	User Acceptance Testing	
+7.3	Evaluation	
+8.	Promising Prospect, Current Shortcomings and Business Model	
+8.1	Current Shortcomings	
+8.2	Promising Prospect	
+8.3	Business Model	
+9.	Conclusion	
+10.	Appendix	
+10.1	References	
+10.2	Project Proposal	
+10.3	Project Objectives	
+10.4	Installation Guide	
+10.5	User Guide	
+10.6	UAT Test Results	
+10.7	Team Member Reports	
+
+
 
 ---
 ## SECTION 7 : MISCELLANEOUS
