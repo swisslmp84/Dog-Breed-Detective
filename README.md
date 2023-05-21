@@ -118,6 +118,10 @@ Contents
 * This folders contain the images use by the project team members during the UAT
 
 ## Unused Algorithim Python files
-*  This folders contain the python files of the KNN and Decision Trees Algorithms which are not used in the project but was evalutated as a suitable candidate for the project.
+*  This folders contain the python files of the KNN,Decision Trees Algorithms which are not used in the project but was evalutated as a suitable candidate for the project.<br/>
+*  Recommender and Webscrapping source files<br/>
+
+## CNN Model
+*  This folder contains the CNN modelling python source files. 
 
 ---
